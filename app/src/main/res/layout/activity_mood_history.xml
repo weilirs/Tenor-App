@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MoodHistory">
+
+    <TextView
+        android:id="@+id/moodSuggestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Looks like you don't have mood history yet! Please capture some pictures to see your mood graph here."
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/mood_line_chart"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <!--    <LinearLayout-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="580dp"-->
+    <!--            android:layout_marginStart="20dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/graphemoji1"-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                app:srcCompat="@drawable/great"-->
+    <!--                android:layout_gravity="top"-->
+    <!--                android:foregroundGravity="top"/>-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/graphemoji2"-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                app:srcCompat="@drawable/good"-->
+    <!--                android:layout_gravity="top"-->
+    <!--                android:foregroundGravity="top"-->
+    <!--                android:layout_marginTop="102dp"/>-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/graphemoji3"-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                app:srcCompat="@drawable/okay"-->
+    <!--                android:layout_gravity="top"-->
+    <!--                android:foregroundGravity="top"-->
+    <!--                android:layout_marginTop="102dp"/>-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/graphemoji4"-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                app:srcCompat="@drawable/bad"-->
+    <!--                android:layout_gravity="top"-->
+    <!--                android:foregroundGravity="top"-->
+    <!--                android:layout_marginTop="102dp"/>-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/graphemoji5"-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                app:srcCompat="@drawable/awful"-->
+    <!--                android:layout_gravity="top"-->
+    <!--                android:foregroundGravity="top"-->
+    <!--                android:layout_marginTop="102dp"/>-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/moodSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="bottom"-->
+<!--            android:text="TextView" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@drawable/awful" />-->
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemHorizontalTranslationEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:id="@+id/filter_menu"
+        android:title="Select Filter">
+        <menu>-->
+            <item android:id="@+id/happy_menu_item"
+                android:title="Happy Moments" />
+            <item android:id="@+id/sad_menu_item"
+                android:title="Sad Moments" />
+            <item android:id="@+id/past_month_menu_item"
+                android:title="Past Month" />
+            <item android:id="@+id/past_year_menu_item"
+                android:title="Past Year" />
+    <!--</menu>
+</item>-->
+</menu>

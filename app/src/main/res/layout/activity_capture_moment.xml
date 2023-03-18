@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    tools:context=".CaptureMoment">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/captured_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="20dip" />
+
+    <Button
+        android:id="@+id/pick_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:icon="@drawable/calendar_icon" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/captureMomentCurrentDateDisplay"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:drawableLeft="@drawable/calendar_icon"-->
+<!--        android:drawableTint="@color/cyan_200"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/captureMomentCurrentDateDisplay_text" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/captureMomentTextEntry_placeholder_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/captureMomentTextEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/edittext_border"
+            android:gravity="start"
+            android:minHeight="200dp"
+            android:padding="25dp"
+            android:paddingStart="25dp"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/captureMomentHeaderMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/captureMomentHeaderMessage_text"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <com.hadi.emojiratingbar.EmojiRatingBar
+        android:id="@+id/emoji_rating_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:showAllText="false"
+        app:showText="true"
+        app:titleColor="#844848">
+
+    </com.hadi.emojiratingbar.EmojiRatingBar>
+    <!--        android:fontFamily="" />-->
+
+    <Button
+        android:id="@+id/captureMomentSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/captureMomentSubmitButton_text" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemHorizontalTranslationEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

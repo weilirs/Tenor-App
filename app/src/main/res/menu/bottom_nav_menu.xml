@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu_item"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home_activity_name"/>
+    <item
+        android:id="@+id/mood_history_menu_item"
+        android:icon="@drawable/mood_history_icon"
+        android:title="@string/mood_history_activity_name" />
+    <item
+        android:id="@+id/past_moments_menu_item"
+        android:icon="@drawable/past_moments_icon"
+        android:title="@string/past_moments_activity_name" />
+    <item
+        android:id="@+id/highlights_menu_item"
+        android:icon="@drawable/highlights_icon"
+        android:title="@string/highlights_activity_name" />
+</menu>

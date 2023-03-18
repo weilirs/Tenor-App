@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tenor</string>
+    <string name="capture_moment_activity_name">Capture Moment</string>
+    <string name="mood_history_activity_name">Mood History</string>
+    <string name="highlights_activity_name">Highlights</string>
+    <string name="highlights_title_name">Highlights of Your Moments</string>
+    <string name="highlights_happy_name">Happy Moments</string>
+    <string name="highlights_sad_name">Sad Moments</string>
+    <string name="past_moments_activity_name">Past Moments</string>
+    <string name="home_activity_name">Home</string>
+    <string name="tenor_logo_image_description">Tenor Logo</string>
+    <string name="captureMomentTextEntry_placeholder_text">Enter your thoughts here...</string>
+    <string name="captureMomentHeaderMessage_text">How are you feeling?</string>
+    <string name="captureMomentCurrentDateDisplay_text">Date</string>
+    <string name="captureMomentSubmitButton_text">Submit Entry</string>
+    <string name="app_description">Tenor is a photo-journaling and mood tracking app. Use it to capture a moment in time and record your thoughts and feelings along with it.</string>
+    <string name="app_description_v2">Click on the button below to get started.</string>
+    <string name="select_date">Select Date</string>
+</resources>
